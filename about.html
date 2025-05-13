@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Main Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="sticky flex flex-col justify-start p-4 md:px-[60px] lg:flex-row lg:items-center gap-[10px] lg:justify-between"
+    >
+      <div class="flex justify-between">
+        <div class="flex gap-3 items-center">
+          <img src="assets/logo.png" alt="" width="50" height="20" />
+          <span class="font-bold italic text-2xl font-mono"> MyCode </span>
+        </div>
+        <div class="lg:hidden hide">
+          <img src="assets/burger-bar.png" width="50" alt="" />
+        </div>
+      </div>
+      <div class="toggle hidden lg:flex lg:flex-row w-[60%] lg:justify-between">
+        <div>
+          <ul class="lg:flex lg:gap-[60px] item-center text-lg font-bold">
+            <li class="m-[10px] lg:m-none">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-orange-400 m-[10px] lg:m-none">
+              <a href="#">About Us</a>
+            </li>
+            <li class="m-[10px] lg:m-none">
+              <a href="features.html">Features</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="text-white font-bold bg-orange-400 text-lg font-mono p-3 rounded-lg"
+          >
+            <a href="contact.html">Contact</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="flex flex-col justify-center items-center h-[60vh] bg-linear-to-t from-orange-400 to-yellow-400"
+    >
+      <h1
+        class="text-center text-white text-[50px] md:text-[80px] font-bold font-mono"
+      >
+        About Us
+      </h1>
+      <h2 class="text-white text-[20px] md:text-[25px] font-bold font-mono">
+        Scroll For More Information
+        <i class="fa-solid fa-chevron-up fa-bounce"></i>
+      </h2>
+    </header>
+
+    <section class="p-[20px] my-[20px]">
+      <div
+        class="grid grid-row-1 lg:grid-cols-2 gap-[30px] justify-center items-center"
+      >
+        <div class="text-xl">
+          <h1 class="text-center font-bold text-4xl text-orange-400">
+            About Our Company
+          </h1>
+          <p class="mb-[10px] text-justify p-[10px]">
+            MyCode adalah perusahaan teknologi yang berfokus pada pengembangan
+            skill di bidang Teknologi Informasi guna menciptakan individu yang
+            mampu beradaptasi di era transformasi digital. Kami menggabungkan
+            kreativitas, teknologi, dan strategi untuk menciptakan metode
+            pengajran yang interaktir, efisien, dan mudah untuk dipahami.
+          </p>
+          <p class="mb-[10px] text-justify p-[10px]">
+            Dengan tim profesional yang berdedikasi, MyCode berkomitmen untuk
+            memberikan layanan course terbaik kepada setiap member yang
+            bergabung. Kami percaya bahwa teknologi bukan hanya alat, tetapi
+            juga jembatan menuju perubahan positif.
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/img1.jpeg"
+            alt=""
+            class="w-full h-[400px] object-cover rounded-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="my-[30px] px-[30px]">
+      <h1 class="text-center font-bold text-4xl text-orange-400">
+        Visi & Misi
+      </h1>
+      <div
+        class="flex flex-col lg:flex-row items-center justify-between gap-[10px] lg:gap-[20px]"
+      >
+        <div
+          class="h-[200px] w-[300px] md:w-[600px] flex gap-4 items-start mt-10 p-[20px] bg-slate-200 rounded-xl"
+        >
+          <i class="fa-solid fa-lightbulb text-3xl text-orange-400"></i>
+          <div>
+            <h3 class="font-bold text-lg">Inovasi</h3>
+            <p class="text-gray-600">
+              Kami selalu berinovasi dalam setiap kurikulum dan pengembangan
+              teknologi.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[200px] w-[300px] md:w-[600px] flex gap-4 items-start mt-10 p-[20px] bg-slate-200 rounded-xl"
+        >
+          <i class="fa-solid fa-graduation-cap text-3xl text-orange-400"></i>
+          <div>
+            <h3 class="font-bold text-lg">Pengajar Ahli</h3>
+            <p class="text-gray-600">
+              Untuk menjaga kualitas pengajaran, kami hanya menyediakan para
+              praktisi ahli dalam pengajaran kami.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[200px] w-[300px] md:w-[600px] flex gap-4 items-start mt-10 p-[20px] bg-slate-200 rounded-xl"
+        >
+          <i class="fa-solid fa-hand text-3xl text-orange-400"></i>
+          <div>
+            <h3 class="font-bold text-lg">Interaktivitas</h3>
+            <p class="text-gray-600">
+              Guna menciptakan metode pengajaran terbaik, kami menyediakan
+              banyak metode pengajaran interaktif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-[20px] my-[20px] bg-slate-200 mt-10">
+      <div
+        class="grid grid-cols-1 gap-[30px] md:grid-cols-3 md:gap-6 text-center"
+      >
+        <div>
+          <h2 class="text-5xl font-bold text-orange-400">500+</h2>
+          <p class="text-lg font-semibold">Alumni Terdaftar</p>
+        </div>
+        <div>
+          <h2 class="text-5xl font-bold text-orange-400">30</h2>
+          <p class="text-lg font-semibold">Kelas Interaktif</p>
+        </div>
+        <div>
+          <h2 class="text-5xl font-bold text-orange-400">5 Tahun</h2>
+          <p class="text-lg font-semibold">Berkarya</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-[30px] px-[30px]">
+      <h1 class="text-center font-bold text-4xl text-orange-400">
+        Apa Kata Mereka?
+      </h1>
+      <div
+        class="flex flex-col lg:flex-row items-center justify-between p-[20px] gap-[20px]"
+      >
+        <div
+          class="h-[200px] flex flex-col justify-center p-[20px] bg-linear-to-t from-orange-400 to-yellow-400 w-[300px] md:w-[600px] rounded-xl"
+        >
+          <h3 class="font-bold text-xl text-white">Abdul Munir</h3>
+          <blockquote class="italic text-xl text-white">
+            "Belajar bukan tentang menjadi yang terbaik, tapi tentang menjadi
+            lebih baik dari kemarin." – MyCode
+          </blockquote>
+        </div>
+        <div
+          class="h-[200px] flex flex-col justify-center p-[20px] w-[300px] md:w-[600px] bg-linear-to-t from-orange-400 to-yellow-400 rounded-xl"
+        >
+          <h3 class="font-bold text-xl text-white">Bambang</h3>
+          <blockquote class="italic text-xl text-white">
+            "Keren banget sih metode pengajarannya, sangat interaktir dan
+            jelas." – MyCode
+          </blockquote>
+        </div>
+        <div
+          class="h-[200px] flex flex-col justify-center p-[20px] w-[300px] md:w-[600px] bg-linear-to-t from-orange-400 to-yellow-400 rounded-xl"
+        >
+          <h3 class="font-bold text-xl text-white">Dony Saputra</h3>
+          <blockquote class="italic text-xl text-white">
+            "Baru kari ini saya menemukan course yang gak pelit ilmu. Semua
+            materi yang diberikan bermanfaat dan relevan dengan industri saat
+            ini." – MyCode
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10 mt-20">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <!-- Logo dan Deskripsi -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo.png" alt="MyCode Logo" width="50" />
+            <span class="text-2xl font-bold font-mono">MyCode</span>
+          </div>
+          <p class="text-gray-400 text-md">
+            Jadi Ahli Teknologi Digital Masa Depan Bersama Kami di MyCode
+          </p>
+        </div>
+
+        <!-- Navigasi -->
+        <div>
+          <ul class="space-y-2 text-gray-300">
+            <li>
+              <a href="./index.html" class="hover:text-orange-400">Home</a>
+            </li>
+            <li><a href="#" class="hover:text-orange-400">About Us</a></li>
+            <li>
+              <a href="features.html" class="hover:text-orange-400">Features</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-orange-400">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sosial Media -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-white"
+      >
+        © 2025 MyCode. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      $(".hide").click(() => {
+        $(".toggle").toggle(300);
+      });
+      window.addEventListener("resize", () => {
+        $(".toggle").removeAttr("style");
+      });
+    </script>
+  </body>
+</html>

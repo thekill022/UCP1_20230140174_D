@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Features – MyCode</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- navbar -->
+    <nav
+      class="sticky flex flex-col justify-start p-4 md:px-[60px] lg:flex-row lg:items-center gap-[10px] lg:justify-between"
+    >
+      <div class="flex justify-between">
+        <div class="flex gap-3 items-center">
+          <img src="assets/logo.png" alt="" width="50" height="20" />
+          <span class="font-bold italic text-2xl font-mono"> MyCode </span>
+        </div>
+        <div class="lg:hidden hide">
+          <img src="assets/burger-bar.png" width="50" alt="" />
+        </div>
+      </div>
+      <div class="toggle hidden lg:flex lg:flex-row w-[60%] lg:justify-between">
+        <div>
+          <ul class="lg:flex lg:gap-[60px] item-center text-lg font-bold">
+            <li class="m-[10px] lg:m-none">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="m-[10px] lg:m-none">
+              <a href="./about.html">About Us</a>
+            </li>
+            <li class="text-orange-400 m-[10px] lg:m-none">
+              <a href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="text-white font-bold bg-orange-400 text-lg font-mono p-3 rounded-lg"
+          >
+            <a href="contact.html">Contact</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Galeri Fitur -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-10 text-orange-400">
+        Galeri Fitur
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/temp1.jpeg"
+            alt="Fitur 1"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl mb-2">Kode Editor Interaktif</h3>
+            <p class="text-gray-600">
+              Belajar dan praktik langsung dengan editor yang responsif.
+            </p>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/temp2.jpeg"
+            alt="Fitur 2"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl mb-2">Tugas Otomatis</h3>
+            <p class="text-gray-600">
+              Tugas dikerjakan langsung dan dinilai secara otomatis.
+            </p>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/temp3.jpeg"
+            alt="Fitur 3"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl mb-2">Forum Diskusi</h3>
+            <p class="text-gray-600">
+              Tempat berbagi ide dan bertanya seputar coding dan teknologi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contoh Materi Pembelajaran -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10 text-orange-400">
+          Contoh Materi Pembelajaran
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">HTML Dasar</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Struktur dasar HTML</li>
+              <li>
+                Penggunaan tag-tag umum seperti <code>&lt;div&gt;</code>,
+                <code>&lt;p&gt;</code>, dan <code>&lt;a&gt;</code>
+              </li>
+              <li>Form dan input</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">JavaScript Pemula</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Variabel dan tipe data</li>
+              <li>Fungsi dan kondisi</li>
+              <li>DOM Manipulation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">
+        Contoh Materi Pembelajaran
+      </h2>
+      <div class="flex justify-center items-center">
+        <iframe
+          src="https://www.youtube.com/embed/gRrM9TBnRYE?autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-[350px] h-[200px] md:w-[700px] md:h-[400px]"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10 mt-20">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo.png" alt="MyCode Logo" width="50" />
+            <span class="text-2xl font-bold font-mono">MyCode</span>
+          </div>
+          <p class="text-gray-400 text-md">
+            Jadi Ahli Teknologi Digital Masa Depan Bersama Kami di MyCode
+          </p>
+        </div>
+
+        <div>
+          <ul class="space-y-2 text-gray-300">
+            <li>
+              <a href="./index.html" class="hover:text-orange-400">Home</a>
+            </li>
+            <li><a href="#" class="hover:text-orange-400">About Us</a></li>
+            <li>
+              <a href="features.html" class="hover:text-orange-400">Features</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-orange-400">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-orange-400 text-xl"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-white"
+      >
+        © 2025 MyCode. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      $(".hide").click(() => {
+        $(".toggle").toggle(300);
+      });
+      window.addEventListener("resize", () => {
+        $(".toggle").removeAttr("style");
+      });
+    </script>
+  </body>
+</html>

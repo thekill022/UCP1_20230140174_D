@@ -3,7 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Main Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-  <body></body>
+  <body
+    class="bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"
+  >
+    <!-- popup -->
+    <div
+      class="fixed bg-black/50 w-screen h-screen flex justify-center items-center"
+    >
+      <div class="bg-white p-[20px] rounded-2xl">
+        <div id="close" class="font-bold text-lg mb-[10px]">
+          <span
+            class="p-[5px] px-[10px] rounded-xl border-[1px] border-black cursor-pointer"
+          >
+            X
+          </span>
+        </div>
+        <a href="contact.html">
+          <img src="assets/promo.png" class="w-[200px] md:w-[300px]" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav
+      class="flex flex-col justify-start p-4 md:px-[60px] lg:flex-row lg:items-center gap-[10px] lg:justify-between"
+    >
+      <div class="flex justify-between">
+        <div class="flex gap-3 items-center">
+          <img src="assets/logo.png" alt="" width="50" height="20" />
+          <span class="font-bold italic text-2xl font-mono"> MyCode </span>
+        </div>
+        <div class="lg:hidden hide">
+          <img src="assets/burger-bar.png" width="50" alt="" />
+        </div>
+      </div>
+      <div class="toggle hidden lg:flex lg:flex-row w-[60%] lg:justify-between">
+        <div>
+          <ul class="lg:flex lg:gap-[60px] item-center text-lg font-bold">
+            <li class="text-orange-400 m-[10px] lg:m-none">
+              <a href="#">Home</a>
+            </li>
+            <li class="m-[10px] lg:m-none">
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="m-[10px] lg:m-none">
+              <a href="features.html">Features</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="text-white font-bold bg-orange-400 text-lg font-mono p-3 rounded-lg"
+          >
+            <a href="contact.html">Contact</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="flex flex-col lg:flex-row gap-[20px] p-[60px] items-center justify-center h-[85vh]"
+    >
+      <!-- teks -->
+      <div>
+        <h1
+          class="text-center lg:text-start text-[40px] lg:text-[100px] font-bold"
+        >
+          Let's <span class="text-orange-400">Code</span> <br />
+          With Us
+        </h1>
+        <h4 class="text-center lg:text-start font-bold text-lg">
+          Mari bergabung bersama kami dan jadilah insan teknologi Indonesia di
+          masa depan. Rasakan pembelajaran terarah dengan pengajar professional.
+        </h4>
+        <div class="flex justify-center mt-[10px] lg:hidden">
+          <button
+            class="text-white font-bold bg-orange-400 text-lg font-mono p-3 rounded-lg"
+          >
+            <a href="about.html">Know About Us</a>
+          </button>
+        </div>
+      </div>
+      <!-- gambar pendukung -->
+      <div class="hidden lg:block">
+        <img src="assets/animation.png" class="w-[900px]" alt="" />
+      </div>
+    </header>
+
+    <script>
+      $(".hide").click(() => {
+        $(".toggle").toggle(300);
+      });
+      window.addEventListener("resize", () => {
+        $(".toggle").removeAttr("style");
+      });
+
+      $("#close").click(() => {
+        $("#close").parent().parent().remove();
+      });
+    </script>
+  </body>
 </html>
